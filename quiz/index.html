@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<div class="quiz">
+
+		<div class="percent-line" id="percent-line">
+			<input id="range" type="range" class="range active" value="0">
+			<span id="rangenum" class="percent__num"></span>
+		</div>
+
+		<div class="quiz__question" id="question">
+			<h2 class="title">questions</h2>
+
+			<h3 class="title"></h3>
+			<h4 class="summary"></h4>
+			<p class="result"></p>
+			<form class="sendForm" action="" method="POST">
+				<input class="emailtext" type="email" name="email" placeholder="Введите почту для отправки результата">
+				<button class="button">Отправить</button>
+			</form>
+
+		</div>
+
+		<ul class="quiz-list" id="list">
+
+			<li>
+				<label>
+					<input class="answer" name="answer" type="radio">
+					<span>answer</span>
+				</label>
+			</li>
+
+		</ul>
+
+		<div class="btn">
+			<button class="quiz-submit submit" id="submit">Ответить</button>
+		</div>
+
+
+	</div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
